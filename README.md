@@ -27,6 +27,8 @@ The Ziften Topic has messages froms in this format:
      System.out.printf("\n\nFound protobuf message: %s", abstractMessage.getClass().getSimpleName());
      System.out.println("\n\t" + ProtobufToJSON.toJSONObjectModel(abstractMessage));  
 
+* Please note that ProtobufTOJSON now actually returns a Map<String,Object>. 
+
 A jar containing just the protobuffer messages is at:
   - /protocol-0.0.2-SNAPSHOT.jar
 

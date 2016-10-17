@@ -27,3 +27,10 @@ A jar containing just the protobuffer messages is at:
 
 An example of consuming off a Kafka topic is also provided. Ziften uses Kafka 0.10. The consumer was refactored in Kafka 0.9, so please consult the 0.10 documentaiton if you are not familiar: https://kafka.apache.org/documentation 
 
+To build the whole project:
+    mvn installl
+ 
+This should result in a new shaded jar at target/kafka-example-jar
+At this point you run it the same way as the provided example jar:
+        $ java -jar build/ziften-kafka-example.jar ec2-54-161-12-134.compute.amazonaws.com:9092 ZIFTEN.DATACOLLECTION_
+  

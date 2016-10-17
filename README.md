@@ -44,6 +44,6 @@ At this point you run it the same way as the provided example jar:
         $ java -jar build/ziften-kafka-example.jar ec2-54-161-12-134.compute.amazonaws.com:9092 ZIFTEN.DATACOLLECTION_
   
 
-[![asciicast](https://asciinema.org/a/14.png)](https://asciinema.org/a/89523)
+[![asciicast](https://asciinema.org/a/c9al08dk3da0ypc4l8e5oj637.png)](https://asciinema.org/a/c9al08dk3da0ypc4l8e5oj637)
 
 

@@ -14,7 +14,7 @@ Run from command line:
 In some installations the topic name could be different. Contact Ziften to find out the exact name.
   
 ##### Building and using the protocol buffers library and Ziften's helper functions
-The Ziften Topic has messages froms in this format:
+The Ziften DATACOLLECTION Topic has messages in this format:
 
 
     <pb type="MessageType" hmac="">BASE64==</pb>

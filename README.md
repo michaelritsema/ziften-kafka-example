@@ -43,3 +43,15 @@ At this point you run it the same way as the provided example jar:
 
         $ java -jar build/ziften-kafka-example.jar ec2-54-161-12-134.compute.amazonaws.com:9092 ZIFTEN.DATACOLLECTION_
   
+
+
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="/asciinema-player.css" />
+</head>
+<body>
+  <asciinema-player src="/asciicast-89523.json" cols="126" rows="42"></asciinema-player>
+  ...
+  <script src="/asciinema-player.js"></script>
+</body>
+</html>

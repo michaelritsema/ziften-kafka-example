@@ -46,4 +46,26 @@ At this point you run it the same way as the provided example jar:
 
 [![asciicast](https://asciinema.org/a/c9al08dk3da0ypc4l8e5oj637.png)](https://asciinema.org/a/c9al08dk3da0ypc4l8e5oj637)
 
+##### Ziften server changes
+The following are currently required changes to be made for remote Kafka connection
 
+    vim /opt/ziften/kafka/config/server.properties
+    
+Replace the line
+    
+    advertised.listeners=PLAINTEXT://localhost:9092
+with
+
+  advertised.listeners=PLAINTEXT://NEW_IP:9092
+  
+ Where NEW_IP is an ip (or hostname) that is accessible from both the server and the location the new consumer will run. This is required because Ziften only listens on localhost by default.
+ 
+Make sure the port is open:
+    
+    iptables -A INPUT -p tcp --dport 9092 -j ACCEPT
+    
+Restart the Kafka service:
+    
+    service ziften restart kafka
+  
+    

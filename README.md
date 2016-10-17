@@ -56,7 +56,7 @@ Replace the line
     advertised.listeners=PLAINTEXT://localhost:9092
 with
 
-  advertised.listeners=PLAINTEXT://NEW_IP:9092
+    advertised.listeners=PLAINTEXT://NEW_IP:9092
   
  Where NEW_IP is an ip (or hostname) that is accessible from both the server and the location the new consumer will run. This is required because Ziften only listens on localhost by default.
  
@@ -67,5 +67,10 @@ Make sure the port is open:
 Restart the Kafka service:
     
     service ziften restart kafka
-  
+
+Verify Kafka is back up and running. This should list all topics:
+    
+    /opt/ziften/kafka/binkafka-topics.sh --list --zookeeper localhost:2181 
+    
+    
     

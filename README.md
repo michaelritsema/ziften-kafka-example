@@ -3,6 +3,7 @@
 
 ##### Running the example
 A prebuilt Java 8 jar is in /build
+
 Run from command line:
   
     $ java -jar build/ziften-kafka-example.jar ec2-54-161-12-134.compute.amazonaws.com:9092 ZIFTEN.DATACOLLECTION_

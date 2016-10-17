@@ -6,7 +6,7 @@ A prebuilt Java 8 jar is in /build
 
 Run from command line:
   
-    $ java -jar build/ziften-kafka-example.jar ec2-54-161-12-134.compute.amazonaws.com:9092 ZIFTEN.DATACOLLECTION_
+    $ java -jar build/ziften-kafka-example.jar ec2-54-16-12-14.compute.amazonaws.com:9092 ZIFTEN.DATACOLLECTION_
   
   * First parameter is the Kafka server string: remote_host:9092
   * Second paramter is the topic name: ZIFTEN.DATACOLLECTION_

@@ -14,9 +14,13 @@ In some installations the topic name could be different. Contact Ziften to find 
   
 ##### Building and using the protocol buffers library and Ziften's helper functions
 The Ziften Topic has messages froms in this format:
+
+
     <pb type="MessageType" hmac="">BASE64==</pb>
  
  Each type is associated with a protobuf message. The text of the pb element is a base64 encoded protobuf. You can use the type to determine what protobuf message you need to use to decode the message. Some helper utilties were provided. 
+ 
+ 
      String xmlMSg=" <pb type="MessageType" hmac="">BASE64aaabbbccccc==</pb>"
      AbstractMessage abstractMessage = new ProtobufMessageUtil().decode(xmlMsg);
      System.out.printf("\n\nFound protobuf message: %s", abstractMessage.getClass().getSimpleName());
@@ -32,5 +36,7 @@ To build the whole project:
  
 This should result in a new shaded jar at target/kafka-example-jar
 At this point you run it the same way as the provided example jar:
+
+
         $ java -jar build/ziften-kafka-example.jar ec2-54-161-12-134.compute.amazonaws.com:9092 ZIFTEN.DATACOLLECTION_
   
